@@ -3,5 +3,3 @@ DirectoryIndex
 RewriteEngine On
 RewriteBase /
 RewriteRule ^(.*)?$ http://127.0.0.1:1337/$1 [P,L]
-
-RewriteRule ^phpmyadmin\/(.*)$ /db/$1 [R=301,L]
