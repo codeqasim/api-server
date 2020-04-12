@@ -13,7 +13,7 @@
     <title><?php echo $title; ?></title>
     <base href="<?php echo base_url(); ?>">
 
-    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon.png';?>">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/img/favicon.png'>">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
 
    <!-- MetaTags -->
