@@ -256,6 +256,30 @@
     return"none"===b?"":b},e.prototype.cacheAnimationName=function(a){return this.animationNameCache.set(a,this.animationName(a))},e.prototype.cachedAnimationName=function(a){return this.animationNameCache.get(a)},e.prototype.scrollHandler=function(){return this.scrolled=!0},e.prototype.scrollCallback=function(){var a;return!this.scrolled||(this.scrolled=!1,this.boxes=function(){var b,c,d,e;for(d=this.boxes,e=[],b=0,c=d.length;c>b;b++)a=d[b],a&&(this.isVisible(a)?this.show(a):e.push(a));return e}.call(this),this.boxes.length||this.config.live)?void 0:this.stop()},e.prototype.offsetTop=function(a){for(var b;void 0===a.offsetTop;)a=a.parentNode;for(b=a.offsetTop;a=a.offsetParent;)b+=a.offsetTop;return b},e.prototype.isVisible=function(a){var b,c,d,e,f;return c=a.getAttribute("data-wow-offset")||this.config.offset,f=window.pageYOffset,e=f+Math.min(this.element.clientHeight,this.util().innerHeight())-c,d=this.offsetTop(a),b=d+a.clientHeight,e>=d&&b>=f},e.prototype.util=function(){return null!=this._util?this._util:this._util=new b},e.prototype.disabled=function(){return!this.config.mobile&&this.util().isMobile(navigator.userAgent)},e}()}).call(this);new WOW().init()
     </script>
 
+    <script>
+    if ("geolocation" in navigator) {
+  // check if geolocation is supported/enabled on current browser
+  navigator.geolocation.getCurrentPosition(
+   function success(position) {
+     // for when getting location is a success
+     console.log('latitude', position.coords.latitude,
+                 'longitude', position.coords.longitude);
+   },
+ function error(error_message) {
+    // for when getting location results in an error
+    console.error('An error has occured while retrieving
+                  location', error_message)
+    ipLookUp()
+ }
+});
+} else {
+  // geolocation is not supported
+  // get your location some other way
+  console.log('geolocation is not enabled on this browser')
+  ipLookUp()
+}
+    </script>
+
 </head>
 <body>
 
