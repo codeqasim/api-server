@@ -16,7 +16,7 @@ footer { margin: 10px auto; display: block; text-align: center; }
 .hero input:focus{ outline: none; }
 .hero h2{ font-size: 2.375rem; font-weight: 600; margin-bottom: 0; line-height: 1.15; margin: -10px 0 12px; text-shadow: 0px 1px 4px #000; color: #fff }
 
-.herotext { font-size: 48px; font-weight: 800; line-height: 30px; color: #101928; }
+.herotext { font-size: 28px; font-weight: 800; line-height: 35px; color: #101928; }
 .categories { background-image: linear-gradient(0deg,rgb(242,242,247),rgb(255,255,255)); padding-bottom: 35px }
 .categories .items { padding: 15px; }
 .categories a { min-height: 156px; color: #000; text-decoration: none; width: 100%;margin-bottom: 25px; float: left; box-shadow: rgba(16, 25, 40, 0.08) 0px 4px 8px 0px; /*display: flex; */flex-direction: column; cursor: pointer; border-radius: 0px; background: white; overflow: hidden; border-width: 1px; border-style: solid; border-color: rgb(231, 232, 233); border-image: initial; transition: box-shadow 300ms ease 0s, transform 300ms ease 0s; }
