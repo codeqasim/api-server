@@ -20,9 +20,12 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('header');
-		$this->load->view('home');
-		$this->load->view('footer');
+	    /*$this->output->cache(60*12);*/
+
+        $this->data['title'] = 'Home';
+        $this->data['main_content'] = 'home';
+		$this->load->view('template', $this->data);
+
 	}
 
     public function signup()
